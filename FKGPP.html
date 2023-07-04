@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <title>FK Parallettes Prime</title>
+    <link rel="stylesheet" href="fkg1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#four {
+    background-color: #000000;
+}
+
+
+#six{
+    background-color: #fff;
+    width: 100%;
+    height: 23vh;
+}
+
+</style>
+</head>
+<body>
+
+    <nav id="header">
+        <a href="index.html"><img src="image/fk.gearlogo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>      
+    </nav>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="image/items/prallettesprime.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="image/items/parallettes1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="image/items/prallettesprime.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h1>FK Parallettes Prime</h1>
+            <h1>$129.00</h1>
+            <div class="quantity">
+                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                <span class="num">01</span>
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <br>
+            <button class="add-to-cart">
+                <span>ADD TO CART</span>
+            </button>
+            <p>
+                Unleash greater performance by working with a greater range of motion.<br><br>
+                Get the best of both worlds by combining a birch wooden handle for the strong grip, and a metal body for extreme durability.
+            </p>
+        </div>
+    </section>
+
+    <script>
+
+        const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        num = document.querySelector(".num");
+
+        let a = 1;
+
+        plus.addEventListener("click", ()=>{
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+            console.log(a);
+        });
+
+        minus.addEventListener("click", ()=>{
+            if(a > 1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+
+    </script>
+
+    <div class="container">
+        
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKG16.html';">
+                <img src="image/items/16kg.JPG" alt="" class="img-back">
+                <img src="image/items/weigth16.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Weight Vest 16kg</h5>
+                <h5>$333.00</h5>          
+            </figcaption>                    
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKG12.html';">
+                <img src="image/items/model33.jpg" alt="" class="img-back">
+                <img src="image/items/item33.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Weight Vest 12kg</h5>
+                <h5>$293.00</h5>  
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKG12G.html';">
+                <img src="image/items/vest1grey.JPG" alt="" class="img-back">
+                <img src="image/items/vest1.JPG" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Weight Vest 12kg - Reflective</h5>
+                <h5>$313.00</h5>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKG16G.html';">
+                <img src="image/items/vest2grey.jpg" alt="" class="img-back">
+                <img src="image/items/vest2.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Weight Vest 16kg - Reflective</h5>
+                <h5>$343.00</h5>
+            </figcaption>
+        </figure>
+        
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKGPP.html';">
+                <img src="image/items/parallettes1.jpg" alt="" class="img-back">
+                <img src="image/items/prallettesprime.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Parallettes Prime</h5>
+                <h5>$129.00</h5>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKGPE.html';">
+                <img src="image/items/prallettes2.jpg" alt="" class="img-back">
+                <img src="image/items/prallettesedge.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Parallettes Edge</h5>
+                <h5>$99.00</h5> 
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKGWW.html';">
+                <img src="image/items/qwerty.JPG" alt="" class="img-back">
+                <img src="image/items/wristwrap.jpg" alt="" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Wrist Wrap</h5>
+                <h5>$59.00</h5> 
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="hover-animation" onclick="window.location.href='FKGGR.html';">
+                <img src="image/items/gymringmodel.JPG" alt="" class="img-back">
+                <img src="image/items/gymring.jpg" class="img-front">
+            </div>
+            <figcaption>
+                <h5>FK Gymnastic Rings</h5>
+                <h5>$169.00</h5>
+            </figcaption>
+        </figure>
+    </div>
+
+    <section id="six">
+        <h2 class="banner">Up your fitness game with premium calisthenics equipment</h2>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Serin Residency, Jalan Fauna 1, Cyberjaya</p>
+            <p><strong>Phone: </strong>+60196699469</p>
+            <p><strong>Hours: </strong>9:00 - 19:00. Mon - Sat</p>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="#">About us</a>
+            <a href="#">Warranty</a>
+            <a href="#">Shipping</a>
+            <a href="#">Terms & Policies</a>
+        </div>
+
+        <div class="col">
+            <h4>Regions</h4>
+            <a href="#">Malaysia</a>
+            <a href="#">Singapor</a>
+            <a href="#">Australia</a>
+        </div>
+
+        <div class="col">
+            <div class="follow">
+                <h4>Follow</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i>      Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i>      Instagram</a>
+                <a href="#"><i class="fa-regular fa-envelope"></i>      Email</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2023 Fkgear. FKGEAR PTE. LTD. JALAN FAUNA 1, MALAYSIA 63000</p>
+        </div>
+    </footer>
+    
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+    </script>
+
+    <script src="fkg1.js"></script>
+    
+</body>
+</html>
